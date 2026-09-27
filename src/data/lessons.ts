@@ -17,216 +17,107 @@ export type Category = {
   lessons: Lesson[];
 };
 
+function L(id: string, title: string, summary: string): Lesson {
+  return {
+    id,
+    title,
+    duration: "10 min",
+    level: "Beginner",
+    summary,
+    content: [summary],
+  };
+}
+
 export const categories: Category[] = [
   {
     slug: "witchcraft-beginners",
     name: "Witchcraft for Beginners",
     icon: "☽",
     tagline: "Start your path with grounding & intention",
-    description: "Sample lessons for Witchcraft for Beginners. Full curriculum expands after durable deploy.",
+    description: "A welcoming foundation for new practitioners.",
     color: "from-mystic-600 to-mystic-800",
-    lessons: [
-      {
-        id: "witchcraft-beginners-1",
-        title: "Welcome to Witchcraft for Beginners",
-        duration: "8 min",
-        level: "Beginner",
-        summary: "An opening lesson for this path.",
-        content: [
-          "This is a starter lesson so the site builds and deploys. Deeper lessons return in a follow-up push.",
-          "Practice with care, consent, and respect for many paths.",
-        ],
-      },
-    ],
+    lessons: [L("wb-1", "What Is Magick, Really?", "Intention, energy, and personal practice.")],
   },
   {
     slug: "spells-rituals",
     name: "Spells & Rituals",
     icon: "✦",
     tagline: "Craft with purpose, symbol, and timing",
-    description: "Sample lessons for Spells & Rituals. Full curriculum expands after durable deploy.",
-    color: "from-mystic-600 to-mystic-800",
-    lessons: [
-      {
-        id: "spells-rituals-1",
-        title: "Welcome to Spells & Rituals",
-        duration: "8 min",
-        level: "Beginner",
-        summary: "An opening lesson for this path.",
-        content: [
-          "This is a starter lesson so the site builds and deploys. Deeper lessons return in a follow-up push.",
-          "Practice with care, consent, and respect for many paths.",
-        ],
-      },
-    ],
+    description: "Practical spellcraft and ritual design.",
+    color: "from-gold-600 to-mystic-700",
+    lessons: [L("sr-1", "Anatomy of a Spell", "Intention, correspondences, action, release.")],
   },
   {
     slug: "astrology",
     name: "Astrology",
     icon: "✧",
     tagline: "Sky maps for self-knowledge & timing",
-    description: "Sample lessons for Astrology. Full curriculum expands after durable deploy.",
-    color: "from-mystic-600 to-mystic-800",
-    lessons: [
-      {
-        id: "astrology-1",
-        title: "Welcome to Astrology",
-        duration: "8 min",
-        level: "Beginner",
-        summary: "An opening lesson for this path.",
-        content: [
-          "This is a starter lesson so the site builds and deploys. Deeper lessons return in a follow-up push.",
-          "Practice with care, consent, and respect for many paths.",
-        ],
-      },
-    ],
+    description: "Natal chart basics and lunar phases.",
+    color: "from-indigo-600 to-mystic-800",
+    lessons: [L("as-1", "Your Chart as a Map, Not a Cage", "Sun, Moon, Rising—and free will.")],
   },
   {
     slug: "stones-crystals",
     name: "Stones & Crystals",
     icon: "◆",
     tagline: "Earth allies for focus, beauty & ritual",
-    description: "Sample lessons for Stones & Crystals. Full curriculum expands after durable deploy.",
-    color: "from-mystic-600 to-mystic-800",
-    lessons: [
-      {
-        id: "stones-crystals-1",
-        title: "Welcome to Stones & Crystals",
-        duration: "8 min",
-        level: "Beginner",
-        summary: "An opening lesson for this path.",
-        content: [
-          "This is a starter lesson so the site builds and deploys. Deeper lessons return in a follow-up push.",
-          "Practice with care, consent, and respect for many paths.",
-        ],
-      },
-    ],
+    description: "Crystals as symbolic allies and sensory anchors.",
+    color: "from-emerald-700 to-mystic-800",
+    lessons: [L("sc-1", "Choosing Stones by Feel", "Resonance over dogma.")],
   },
   {
     slug: "mediumship",
     name: "Mediumship",
     icon: "◎",
     tagline: "Gentle connection, boundaries & discernment",
-    description: "Sample lessons for Mediumship. Full curriculum expands after durable deploy.",
-    color: "from-mystic-600 to-mystic-800",
-    lessons: [
-      {
-        id: "mediumship-1",
-        title: "Welcome to Mediumship",
-        duration: "8 min",
-        level: "Beginner",
-        summary: "An opening lesson for this path.",
-        content: [
-          "This is a starter lesson so the site builds and deploys. Deeper lessons return in a follow-up push.",
-          "Practice with care, consent, and respect for many paths.",
-        ],
-      },
-    ],
+    description: "Intuitive listening with strong boundaries.",
+    color: "from-violet-600 to-midnight-700",
+    lessons: [L("md-1", "Grounding Before You Open", "Safety first: body, breath, and a clear closing.")],
   },
   {
     slug: "spirit-communication",
     name: "Spirit Communication",
     icon: "◈",
     tagline: "Respectful dialogue with the unseen",
-    description: "Sample lessons for Spirit Communication. Full curriculum expands after durable deploy.",
-    color: "from-mystic-600 to-mystic-800",
-    lessons: [
-      {
-        id: "spirit-communication-1",
-        title: "Welcome to Spirit Communication",
-        duration: "8 min",
-        level: "Beginner",
-        summary: "An opening lesson for this path.",
-        content: [
-          "This is a starter lesson so the site builds and deploys. Deeper lessons return in a follow-up push.",
-          "Practice with care, consent, and respect for many paths.",
-        ],
-      },
-    ],
+    description: "Beginner-friendly spirit communication with boundaries.",
+    color: "from-purple-600 to-midnight-800",
+    lessons: [L("sc-comm-1", "What Spirit Communication Is (and Isn't)", "Prayer, intuition, ancestors, skepticism.")],
   },
   {
     slug: "kundalini",
     name: "Kundalini",
     icon: "❖",
     tagline: "Awakening energy with patience & care",
-    description: "Sample lessons for Kundalini. Full curriculum expands after durable deploy.",
-    color: "from-mystic-600 to-mystic-800",
-    lessons: [
-      {
-        id: "kundalini-1",
-        title: "Welcome to Kundalini",
-        duration: "8 min",
-        level: "Beginner",
-        summary: "An opening lesson for this path.",
-        content: [
-          "This is a starter lesson so the site builds and deploys. Deeper lessons return in a follow-up push.",
-          "Practice with care, consent, and respect for many paths.",
-        ],
-      },
-    ],
+    description: "Educational Kundalini introduction—no medical claims.",
+    color: "from-rose-700 to-mystic-900",
+    lessons: [L("ku-1", "Kundalini as Metaphor & Mystery", "Coiled energy imagery across traditions.")],
   },
   {
     slug: "hypnosis",
     name: "Hypnosis & Trance",
     icon: "◉",
     tagline: "Focused imagination for personal growth",
-    description: "Sample lessons for Hypnosis & Trance. Full curriculum expands after durable deploy.",
-    color: "from-mystic-600 to-mystic-800",
-    lessons: [
-      {
-        id: "hypnosis-1",
-        title: "Welcome to Hypnosis & Trance",
-        duration: "8 min",
-        level: "Beginner",
-        summary: "An opening lesson for this path.",
-        content: [
-          "This is a starter lesson so the site builds and deploys. Deeper lessons return in a follow-up push.",
-          "Practice with care, consent, and respect for many paths.",
-        ],
-      },
-    ],
+    description: "Self-hypnosis and guided trance for growth—not medical treatment.",
+    color: "from-sky-700 to-mystic-800",
+    lessons: [L("hy-1", "What Trance Feels Like", "Everyday trance and focused attention.")],
   },
   {
     slug: "moon-cycles",
     name: "Moon Cycles",
     icon: "☾",
     tagline: "Eight phases, ~29.5-day synodic month",
-    description: "Sample lessons for Moon Cycles. Full curriculum expands after durable deploy.",
-    color: "from-mystic-600 to-mystic-800",
-    lessons: [
-      {
-        id: "moon-cycles-1",
-        title: "Welcome to Moon Cycles",
-        duration: "8 min",
-        level: "Beginner",
-        summary: "An opening lesson for this path.",
-        content: [
-          "This is a starter lesson so the site builds and deploys. Deeper lessons return in a follow-up push.",
-          "Practice with care, consent, and respect for many paths.",
-        ],
-      },
-    ],
+    description: "Lunar literacy for witches and seekers.",
+    color: "from-slate-500 to-mystic-900",
+    lessons: [L("mc-1", "The Eight Phases in Order", "New through waning crescent.")],
   },
   {
     slug: "elements-bending",
     name: "Elements & Bending",
     icon: "⟡",
     tagline: "Earth, Air, Fire, Water as living teachers",
-    description: "Sample lessons for Elements & Bending. Full curriculum expands after durable deploy.",
-    color: "from-mystic-600 to-mystic-800",
-    lessons: [
-      {
-        id: "elements-bending-1",
-        title: "Welcome to Elements & Bending",
-        duration: "8 min",
-        level: "Beginner",
-        summary: "An opening lesson for this path.",
-        content: [
-          "This is a starter lesson so the site builds and deploys. Deeper lessons return in a follow-up push.",
-          "Practice with care, consent, and respect for many paths.",
-        ],
-      },
-    ],
+    description: "Four elements as spiritual allies—not literal physics.",
+    color: "from-amber-600 to-rose-800",
+    lessons: [L("eb-1", "Meeting the Four Elements", "Earth grounds, Air clarifies, Fire transforms, Water feels.")],
   },
 ];
 
