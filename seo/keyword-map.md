@@ -1,4 +1,4 @@
-# Wonders of Spiritual Crafts \u2014 SEO Keyword Map
+# Wonders of Spiritual Crafts — SEO Keyword Map
 
 **Brand only.** Never mix **Ms. Unique** (separate product/brand). All clusters below are for **Wonders of Spiritual Crafts**.
 
@@ -10,7 +10,7 @@ https://mzlatessa101.github.io/wonders-of-spiritual-crafts/
 
 | Term | Notes |
 |------|--------|
-| Wonders of Spiritual Crafts | Full brand name \u2014 primary title / H1 / OG siteName |
+| Wonders of Spiritual Crafts | Full brand name — primary title / H1 / OG siteName |
 | Wonders | Short brand; letter-W discoverability |
 | WOSC | Optional internal/abbrev; use sparingly in copy if adopted |
 | Spiritual Crafts | Partial brand; letter-S / craft searches |
@@ -18,9 +18,9 @@ https://mzlatessa101.github.io/wonders-of-spiritual-crafts/
 
 ### Letter / partial discoverability
 
-- **W\u2026** \u2014 \u201cWonders\u201d, \u201cWonders of Spiritual Crafts\u201d, \u201cwitchcraft\u201d, \u201cWOSC\u201d
-- **S\u2026** \u2014 \u201cSpiritual Crafts\u201d, \u201cspells\u201d, \u201cSupreme Witch Latessa Jamison\u201d
-- Brand fragments \u2014 \u201cWonders Spiritual Crafts\u201d, \u201cspiritual crafts community\u201d, \u201cLatessa Jamison witchcraft\u201d
+- **W…** — “Wonders”, “Wonders of Spiritual Crafts”, “witchcraft”, “WOSC”
+- **S…** — “Spiritual Crafts”, “spells”, “Supreme Witch Latessa Jamison”
+- Brand fragments — “Wonders Spiritual Crafts”, “spiritual crafts community”, “Latessa Jamison witchcraft”
 
 Keep brand phrases in title templates, descriptions, and on-page copy so partial queries still surface the durable host.
 
@@ -35,7 +35,7 @@ Keep brand phrases in title templates, descriptions, and on-page copy so partial
 | Mediumship | mediumship, spirit communication | `/learn/`, `/nights/` |
 | Moon cycles | moon phases, synodic month, craft timing | `/moon/`, `/learn/` |
 | Elements | earth air fire water, elemental bending (embodiment) | `/elements/` |
-| Night gatherings | s\u00e9ance, Ouija, ancestor contact, spirit tea | `/nights/`, `/host/` |
+| Night gatherings | séance, Ouija, ancestor contact, spirit tea | `/nights/`, `/host/` |
 | Community | witchcraft community, spiritual seekers feed | `/community/` |
 | Host / VIP | Supreme Witch, VIP Circle | `/host/`, `/vip/` |
 

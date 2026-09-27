@@ -21,13 +21,13 @@ const sans = Outfit({
 const siteUrl = "https://mzlatessa101.github.io/wonders-of-spiritual-crafts";
 
 const siteDescription =
-  "Wonders of Spiritual Crafts (Wonders / Spiritual Crafts) is a social learning platform for witchcraft and spiritual craft\u2014spells & rituals, astrology, crystals, mediumship, moon cycles, and elemental practice\u2014hosted by Supreme Witch Latessa Jamison.";
+  "Wonders of Spiritual Crafts (Wonders / Spiritual Crafts) is a social learning platform for witchcraft and spiritual craft—spells & rituals, astrology, crystals, mediumship, moon cycles, and elemental practice—hosted by Supreme Witch Latessa Jamison.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default: "Wonders of Spiritual Crafts",
-    template: "%s \u00b7 Wonders of Spiritual Crafts",
+    template: "%s · Wonders of Spiritual Crafts",
   },
   description: siteDescription,
   keywords: [
