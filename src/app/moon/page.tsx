@@ -43,7 +43,6 @@ export default function MoonPage() {
         </Link>
       </div>
 
-      {/* Compact cycle strip */}
       <ol
         className="mt-12 flex flex-wrap items-center justify-center gap-3 rounded-2xl border border-mystic-700/40 bg-midnight-900/50 px-4 py-6 md:gap-4"
         aria-label="Eight lunar phases in order"
