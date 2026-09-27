@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const repo = "wonders-of-spiritual-crafts";
-
 const nextConfig = {
   output: "export",
   images: { unoptimized: true },
@@ -8,5 +7,4 @@ const nextConfig = {
   assetPrefix: `/${repo}`,
   trailingSlash: true,
 };
-
 export default nextConfig;
