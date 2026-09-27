@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: #e8e0f0;
+  --background: #0a0612;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  min-height: 100vh;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-mystic-600 to-mystic-500 px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:from-mystic-500 hover:to-mystic-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-400 focus-visible:ring-offset-2 focus-visible:ring-offset-midnight-950;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-gold-500/40 bg-midnight-800/60 px-6 py-3 text-sm font-semibold text-gold-300 transition hover:border-gold-400 hover:bg-midnight-700 hover:text-gold-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-400 focus-visible:ring-offset-2 focus-visible:ring-offset-midnight-950;
+  }
+
+  .card {
+    @apply rounded-2xl border border-mystic-700/40 bg-midnight-800/50 p-6 backdrop-blur-sm transition hover:border-mystic-500/50 hover:shadow-glow;
+  }
+
+  .section-title {
+    @apply font-display text-3xl font-semibold tracking-tight text-moon md:text-4xl;
+  }
+
+  .section-sub {
+    @apply mt-3 max-w-2xl text-base text-mystic-200/80 md:text-lg;
+  }
+
+  .star-motif::before {
+    content: "✦";
+    @apply mr-2 text-gold-400;
+  }
+}
+
+/* Subtle starfield dots via pseudo pattern */
+.stars-bg {
+  background-color: #0a0612;
+  background-image:
+    radial-gradient(1px 1px at 20px 30px, rgba(232, 224, 240, 0.35), transparent),
+    radial-gradient(1px 1px at 80px 120px, rgba(212, 175, 55, 0.25), transparent),
+    radial-gradient(1.5px 1.5px at 160px 60px, rgba(232, 224, 240, 0.2), transparent),
+    radial-gradient(1px 1px at 240px 180px, rgba(155, 107, 255, 0.3), transparent),
+    radial-gradient(1px 1px at 320px 90px, rgba(232, 224, 240, 0.25), transparent),
+    radial-gradient(1.5px 1.5px at 400px 200px, rgba(212, 175, 55, 0.2), transparent),
+    radial-gradient(1px 1px at 480px 40px, rgba(232, 224, 240, 0.3), transparent),
+    radial-gradient(1px 1px at 560px 150px, rgba(155, 107, 255, 0.25), transparent);
+  background-size: 600px 240px;
+}
+
+::selection {
+  background: rgba(124, 58, 237, 0.4);
+  color: #fff;
+}
