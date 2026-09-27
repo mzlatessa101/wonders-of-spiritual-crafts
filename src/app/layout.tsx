@@ -18,13 +18,75 @@ const sans = Outfit({
   display: "swap",
 });
 
+const siteUrl = "https://mzlatessa101.github.io/wonders-of-spiritual-crafts";
+
+const siteDescription =
+  "Wonders of Spiritual Crafts (Wonders / Spiritual Crafts) is a social learning platform for witchcraft and spiritual craft\u2014spells & rituals, astrology, crystals, mediumship, moon cycles, and elemental practice\u2014hosted by Supreme Witch Latessa Jamison.";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Wonders of Spiritual Crafts",
-    template: "%s · Wonders of Spiritual Crafts",
+    template: "%s \u00b7 Wonders of Spiritual Crafts",
   },
-  description:
-    "A social learning platform for witches, spiritual seekers, and many sacred paths—spells, astrology, crystals, mediumship, hypnosis, and elemental craft.",
+  description: siteDescription,
+  keywords: [
+    "Wonders of Spiritual Crafts",
+    "Wonders Spiritual Crafts",
+    "witchcraft community",
+    "spiritual crafts",
+    "spells rituals",
+    "astrology",
+    "crystals",
+    "mediumship",
+    "Supreme Witch Latessa Jamison",
+  ],
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "Wonders of Spiritual Crafts",
+    title: "Wonders of Spiritual Crafts",
+    description: siteDescription,
+    url: siteUrl,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wonders of Spiritual Crafts",
+    description: siteDescription,
+  },
+  robots: { index: true, follow: true },
+  alternates: {
+    canonical: "/",
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      name: "Wonders of Spiritual Crafts",
+      url: siteUrl,
+      description:
+        "A social + learning platform where spiritual people, witches, beginners, and practitioners of many paths can learn craft, share community, read a spiritual library, receive newsletters, and gather in VIP circles.",
+      publisher: { "@id": `${siteUrl}/#organization` },
+      inLanguage: "en-US",
+    },
+    {
+      "@type": "Organization",
+      "@id": `${siteUrl}/#organization`,
+      name: "Wonders of Spiritual Crafts",
+      url: siteUrl,
+      description:
+        "A social + learning platform where spiritual people, witches, beginners, and practitioners of many paths can learn craft, share community, read a spiritual library, receive newsletters, and gather in VIP circles.",
+      founder: {
+        "@type": "Person",
+        name: "Latessa Jamison",
+        alternateName: "Supreme Witch Latessa Jamison",
+      },
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -35,6 +97,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${display.variable} ${sans.variable}`}>
       <body className="stars-bg font-sans antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <div className="flex min-h-screen flex-col">
           <Navbar />
           <main className="flex-1">{children}</main>

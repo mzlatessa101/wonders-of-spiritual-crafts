@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mzlatessa101.github.io/wonders-of-spiritual-crafts/sitemap.xml
